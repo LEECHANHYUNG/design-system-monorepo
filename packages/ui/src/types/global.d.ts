@@ -1,8 +1,4 @@
-type CSSModule = {
-  [className: string]: string;
-};
-
 declare module "*.scss" {
-  const content: CSSModule;
-  export = content;
+  const content: { [className: string]: string };
+  export default content;
 }

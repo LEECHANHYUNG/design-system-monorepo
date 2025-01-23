@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "allowJs": true,
+    "checkJs": false,
+    "jsx": "preserve",
+    "declaration": true,
+    "declarationMap": true,
+    "strict": true,
+    "moduleResolution": "bundler",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./@types"],
+    "isolatedModules": true,
+    "moduleDetection": "force",
+    "verbatimModuleSyntax": true,
+    "noEmit": true,
+    "baseUrl": ".", // 경로 해석 기준을 루트로 설정
+    "paths": {
+      "@acme/ui": ["packages/ui/src"], // 예시: @acme/ui가 `packages/acme/ui/src`를 가리키게 설정
+      "@ui/*": ["packages/ui/*/src"] // 모든 UI 라이브러리 컴포넌트에 대한 경로 별칭 설정
+    }
+  },
+  "include": ["@types/**/*.ts"]
+}
